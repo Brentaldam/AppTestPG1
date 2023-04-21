@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'JustWork1'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4980197FFA924AD3974E5724232895CD }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_194C7EAB44DF43F79389ADD016884B79 }}
           package: .
