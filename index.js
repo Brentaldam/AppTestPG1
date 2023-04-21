@@ -19,14 +19,6 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: false })); // <--- middleware configuration
 
-// Creating the Books table (Book_ID, Title, Author, Comments)
-const sql_create = `CREATE TABLE IF NOT EXISTS Books (
-  Book_ID SERIAL PRIMARY KEY,
-  Title VARCHAR(100) NOT NULL,
-  Author VARCHAR(100) NOT NULL,
-  Comments TEXT
-);`;
-
 
 // Starting the server
 app.listen(3000, () => {
